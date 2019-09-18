@@ -1,0 +1,21 @@
+james wilson basic code
+my_list = input() 
+  
+
+n = 7# of bits
+n2 = 8
+result = []# list where the result is stored
+result2 = []
+# using list comprehension 
+split = [my_list[i * n:(i + 1) * n] for i in range((len(my_list) + n - 1) // n )]#splits list into sections
+split2 = [my_list[q * n2:(q + 1) * n2] for q in range((len(my_list) + n2 - 1) // n2 )]#splits list into sections
+for i in range(0, len(split)):#loops to add to the result list
+    a = int(split[0+i], 2)# a is equal to the split sections
+    result.append(chr(a))#adds to list an turns it into a character
+if(len(result)== len(split)):#waits for list to be finished to print
+    print(''.join(result))# prints the list with no whitespaces or commas
+for m in range(0, len(split2)):#loops to add to the result list
+    b = int(split2[0+m], 2)# b is equal to the split sections
+    result2.append(chr(b))#adds to list an turns it into a character
+if(len(result2)== len(split2)):#waits for list to be finished to print
+    print(''.join(result2))# prints the list with no whitespaces or commas
