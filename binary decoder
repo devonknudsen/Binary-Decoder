@@ -1,4 +1,4 @@
-james wilson basic code
+#james wilson basic code only works in shell
 my_list = input() 
   
 
