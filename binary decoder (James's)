@@ -1,4 +1,4 @@
-#james wilson basic code only works in shell
+#james wilson basic code only works in shell python ver 3.7.4
 my_list = input() 
   
 
